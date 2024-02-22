@@ -1,9 +1,11 @@
-import './App.css'
 import FilterableList from './component/FilterableList'
+import { GAMES } from './data/games'
 
 function App() {
   return (
-    <FilterableList />
+    <>
+      <FilterableList games={GAMES} />
+    </>
 
   )
 }
