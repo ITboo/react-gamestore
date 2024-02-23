@@ -1,10 +1,21 @@
 import GameCategoryRow from '../GameCategoryRow';
 import GameRow from '../GameRow';
 
-export default function GameList({ games = [] }) {
+export default function GameList({
+    games = [],
+    filterText = '',
+    inWishListOnly = false
+
+}) {
     const rows = []
     let lastCategory = null
     games.forEach((game) => {
+        if (game.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
+            return;
+        }
+        if (inWishListOnly && !game.inWishList) {
+            return;
+        }
         if (game.category !== lastCategory) {
             rows.push(
                 <GameCategoryRow
