@@ -6,7 +6,7 @@ export default function GameRow({ game = {} }) {
     <li className="game-row">
       <span className="game-name">{game.name}</span>
       {game.inWishList && <span className="game-in-wish-list">В желаемом</span>}
-      <GameGallery images={game.images}/>
+      <GameGallery images={game.images} />
       <span className="game-price">{game.price}</span>
     </li>
   );

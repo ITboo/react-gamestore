@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(https://cdn.akamai.steamstatic.com/store/promo/summer2023/Steam_Summer_Sale_pattern-04-day_lighter.gif?v=2);
@@ -17,7 +17,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -36,11 +36,11 @@ img:first-of-type {
 }
 
 img:hover {
-  transform: scale(1.5)
+  transform: scale(1.5);
 }
 
 img:hover {
-  transform: scale(1.5)
+  transform: scale(1.5);
 }
 
 .filter-form {
@@ -49,7 +49,7 @@ img:hover {
 }
 
 .search-input {
-  background-color:rgb(30, 48, 102);
+  background-color: rgb(30, 48, 102);
   border: none;
   padding: 10px;
   min-width: 30%;
@@ -96,7 +96,7 @@ img:hover {
 
 .game-price {
   padding: 10px 20px;
-  background-color:chartreuse;
+  background-color: chartreuse;
   font-weight: bold;
   color: black;
 }
